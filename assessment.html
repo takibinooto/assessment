@@ -2,20 +2,34 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="twitter:card" content="summary" />
-    <meta property="og:url" content="https://takibinooto.github.io/assessment/assessment.html" />
-    <meta property="og:title" content="あなたのいいところ診断" />
-    <meta property="og:description" content="N予備校プログラミング入門コースで制作した、「あなたのいいところ診断」サイトです。" />
-    <title>あなたのいいところ診断</title>
-    <link rel="stylesheet" href="assessment.css" />
+    <title>誰がやる？</title>
+    <link rel="stylesheet" href="kensyuseika.css" />
   </head>
   <body>
-    <h1>あなたのいいところは?</h1>
-    <p>診断したい名前を入れて下さい</p>
-    <input type="text" id="user-name" size="40" maxlength="20" />
-    <button id="assessment">診断する</button>
+    <h1>誰がやる？</h1>
+    <p>方法を選択してください</p>
+    <select name="sel_how">
+        <option value="選択肢1">抽選</option>
+        <option value="選択肢2">ゲーム</option>
+    </select>
+    <p>対象者の人数を選択してください</p>
+    <select name="sel_num" id="sel_num">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <button id="btn_num">OK</button>
+    <p>対象者の名前を入力してください</p>
+    <div name="input" id="namearea"></div>
+    <button id="btn_GO">GO</button>
     <div id="result-area"></div>
     <div id="tweet-area"></div>
-    <script src="assessment.js"></script>
+    <script src="kensyuseika.js"></script>
 </body>
 </html>
